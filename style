@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+  background: #121212;
+  color: #f1f1f1;
+}
+
+.screen {
+  display: none;
+  padding: 20px;
+}
+
+.screen.active {
+  display: block;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #00d4ff;
+  margin-bottom: 20px;
+}
+
+input, textarea, select, button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1e1e1e;
+  color: #fff;
+}
+
+button {
+  background: #00d4ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #008bbf;
+}
+
+.big-btn {
+  font-size: 20px;
+  padding: 15px;
+  margin: 15px auto;
+  width: 60%;
+  background: #007bff;
+}
+
+.big-btn:hover {
+  background: #0056b3;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.grid button {
+  font-size: 30px;
+  padding: 30px;
+  border-radius: 12px;
+  background: #292929;
+}
+
+.grid button:hover {
+  background: #3a3a3a;
+}
+
+.location-section {
+  margin-bottom: 15px;
+}
+
+.desc-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.desc-section textarea {
+  flex: 1;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  width: 85%;
+}
+
+.nav-buttons button {
+  background: #6c757d;
+  color: white;
+  width: 45%;
+}
+
+.nav-buttons button:hover {
+  background: #495057;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 14px;
+  background: #1a1a1a;
+  color: #aaa;
+}
