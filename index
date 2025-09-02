@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Civic Reporting Demo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Screen 1: Login with OTP -->
+  <div class="screen active" id="screen1">
+    <h2>Login</h2>
+    <input type="text" placeholder="Enter phone number">
+    <button onclick="goToScreen('screen2')">SEND OTP</button>
+
+    <h3>Enter OTP</h3>
+    <input type="text" placeholder="Enter 6-digit OTP">
+    <button onclick="goToScreen('screen2')">VERIFY OTP</button>
+  </div>
+
+  <!-- Screen 2: Dashboard -->
+  <div class="screen" id="screen2">
+    <h1 class="logo">CivicApp</h1>
+    <button class="big-btn" onclick="goToScreen('screen3')">REPORT</button>
+    <button class="big-btn" onclick="goToScreen('screen5')">Organization Login</button>
+  </div>
+
+  <!-- Screen 3: Report Categories -->
+  <div class="screen" id="screen3">
+    <h2>Report</h2>
+    <div class="nav-buttons">
+      <button onclick="goToScreen('screen1')">⬅ Back</button>
+      <button onclick="goToScreen('screen2')">🏠 Home</button>
+    </div>
+    <div class="grid">
+      <button onclick="goToScreen('screen4_water')">💧</button>
+      <button onclick="goToScreen('screen4_garbage')">🗑</button>
+      <button onclick="goToScreen('screen4_road')">⚠</button>
+      <button onclick="goToScreen('screen4_electricity')">⚡</button>
+      <button onclick="goToScreen('screen4_block')">🚫</button>
+      <button onclick="goToScreen('screen4_other')">➕</button>
+    </div>
+  </div>
+
+  <!-- Category Screens -->
+  <div class="screen" id="screen4_water">
+    <h2>Water Issue Report</h2>
+    <div class="nav-buttons">
+      <button onclick="goToScreen('screen3')">⬅ Back</button>
+      <button onclick="goToScreen('screen2')">🏠 Home</button>
+    </div>
+    <div class="location-section">
+      <input type="text" placeholder="Enter Location (optional)">
+      <button onclick="useDemoLocation()">Use My Location</button>
+      <select>
+        <option value="">Or select a demo location</option>
+        <option>Main Market</option>
+        <option>Ward 5</option>
+        <option>Village Road</option>
+      </select>
+    </div>
+    <div class="desc-section">
+      <textarea id="desc_water" placeholder="Description (optional)"></textarea>
+      <button type="button" onclick="useDemoVoice('desc_water')">🎤</button>
+    </div>
+    <input type="file">
+    <button onclick="alert('Demo only. Water report submitted.')">Submit</button>
+  </div>
+
+  <div class="screen" id="screen4_garbage">
+    <h2>Garbage Issue Report</h2>
+    <div class="nav-buttons">
+      <button onclick="goToScreen('screen3')">⬅ Back</button>
+      <button onclick="goToScreen('screen2')">🏠 Home</button>
+    </div>
+    <div class="location-section">
+      <input type="text" placeholder="Enter Location (optional)">
+      <button onclick="useDemoLocation()">Use My Location</button>
+      <select>
+        <option value="">Or select a demo location</option>
+        <option>Main Market</option>
+        <option>Ward 5</option>
+        <option>Village Road</option>
+      </select>
+    </div>
+    <div class="desc-section">
+      <textarea id="desc_gar_
