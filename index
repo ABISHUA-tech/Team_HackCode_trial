@@ -84,4 +84,128 @@
       </select>
     </div>
     <div class="desc-section">
-      <textarea id="desc_gar_
+      <textarea id="desc_garbage" placeholder="Description (optional)"></textarea>
+      <button type="button" onclick="useDemoVoice('desc_garbage')">🎤</button>
+    </div>
+    <input type="file">
+    <button onclick="alert('Demo only. Garbage report submitted.')">Submit</button>
+  </div>
+
+  <div class="screen" id="screen4_road">
+    <h2>Road Issue Report</h2>
+    <div class="nav-buttons">
+      <button onclick="goToScreen('screen3')">⬅ Back</button>
+      <button onclick="goToScreen('screen2')">🏠 Home</button>
+    </div>
+    <div class="location-section">
+      <input type="text" placeholder="Enter Location (optional)">
+      <button onclick="useDemoLocation()">Use My Location</button>
+      <select>
+        <option value="">Or select a demo location</option>
+        <option>Main Market</option>
+        <option>Ward 5</option>
+        <option>Village Road</option>
+      </select>
+    </div>
+    <div class="desc-section">
+      <textarea id="desc_road" placeholder="Description (optional)"></textarea>
+      <button type="button" onclick="useDemoVoice('desc_road')">🎤</button>
+    </div>
+    <input type="file">
+    <button onclick="alert('Demo only. Road report submitted.')">Submit</button>
+  </div>
+
+  <div class="screen" id="screen4_electricity">
+    <h2>Electricity Issue Report</h2>
+    <div class="nav-buttons">
+      <button onclick="goToScreen('screen3')">⬅ Back</button>
+      <button onclick="goToScreen('screen2')">🏠 Home</button>
+    </div>
+    <div class="location-section">
+      <input type="text" placeholder="Enter Location (optional)">
+      <button onclick="useDemoLocation()">Use My Location</button>
+      <select>
+        <option value="">Or select a demo location</option>
+        <option>Main Market</option>
+        <option>Ward 5</option>
+        <option>Village Road</option>
+      </select>
+    </div>
+    <div class="desc-section">
+      <textarea id="desc_electricity" placeholder="Description (optional)"></textarea>
+      <button type="button" onclick="useDemoVoice('desc_electricity')">🎤</button>
+    </div>
+    <input type="file">
+    <button onclick="alert('Demo only. Electricity report submitted.')">Submit</button>
+  </div>
+
+  <div class="screen" id="screen4_block">
+    <h2>Block/Restriction Issue Report</h2>
+    <div class="nav-buttons">
+      <button onclick="goToScreen('screen3')">⬅ Back</button>
+      <button onclick="goToScreen('screen2')">🏠 Home</button>
+    </div>
+    <div class="location-section">
+      <input type="text" placeholder="Enter Location (optional)">
+      <button onclick="useDemoLocation()">Use My Location</button>
+      <select>
+        <option value="">Or select a demo location</option>
+        <option>Main Market</option>
+        <option>Ward 5</option>
+        <option>Village Road</option>
+      </select>
+    </div>
+    <div class="desc-section">
+      <textarea id="desc_block" placeholder="Description (optional)"></textarea>
+      <button type="button" onclick="useDemoVoice('desc_block')">🎤</button>
+    </div>
+    <input type="file">
+    <button onclick="alert('Demo only. Block report submitted.')">Submit</button>
+  </div>
+
+  <div class="screen" id="screen4_other">
+    <h2>Other Issue Report</h2>
+    <div class="nav-buttons">
+      <button onclick="goToScreen('screen3')">⬅ Back</button>
+      <button onclick="goToScreen('screen2')">🏠 Home</button>
+    </div>
+    <div class="location-section">
+      <input type="text" placeholder="Enter Location (optional)">
+      <button onclick="useDemoLocation()">Use My Location</button>
+      <select>
+        <option value="">Or select a demo location</option>
+        <option>Main Market</option>
+        <option>Ward 5</option>
+        <option>Village Road</option>
+      </select>
+    </div>
+    <div class="desc-section">
+      <textarea id="desc_other" placeholder="Description (optional)"></textarea>
+      <button type="button" onclick="useDemoVoice('desc_other')">🎤</button>
+    </div>
+    <input type="file">
+    <button onclick="alert('Demo only. Other issue report submitted.')">Submit</button>
+  </div>
+
+  <!-- Screen 5: Organization Login -->
+  <div class="screen" id="screen5">
+    <h2>Organization Login</h2>
+    <div class="nav-buttons">
+      <button onclick="goToScreen('screen2')">⬅ Back</button>
+      <button onclick="goToScreen('screen2')">🏠 Home</button>
+    </div>
+    <input type="text" placeholder="Organization Name">
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <a href="#">Forgot your password?</a>
+    <button onclick="alert('Demo only. Organization login successful.')">Submit</button>
+  </div>
+
+  <footer>
+    <p><strong>Vadodara Hackathon 6.0</strong> | Parul University</p>
+    <p>Made with ❤️ by <strong>Team HackCode</strong>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
